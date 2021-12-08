@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = test_files
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 2.1.4"
-  spec.add_development_dependency "rake", "~> 13.0.1"
-  spec.add_development_dependency "test-unit", "~> 3.3.4"
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake"
+  spec.add_development_dependency "test-unit"
   spec.add_runtime_dependency "fluentd", [">= 0.14.10", "< 2"]
 end
