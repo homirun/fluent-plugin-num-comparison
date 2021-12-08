@@ -15,6 +15,6 @@ jobs:
           ruby-version: 2.7.2
       - name: test
         run: |
-        gem install bundler rake
-        bundle install
-        bundle exec rake test
+          gem install bundler rake
+          bundle install
+          bundle exec rake test
