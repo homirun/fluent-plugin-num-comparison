@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.authors = ["homirun"]
   spec.email   = ["me@homi.run"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "Apache-2.0"
+  spec.summary       = %q{This plugin that compares thresholds and extracts only the larger or smaller ones.}
+  spec.description   = spec.summary
+  spec.homepage      = "https://github.com/homirun/fluent-plugin-num-comparison"
+  spec.license       = "MIT"
 
   test_files, files  = `git ls-files -z`.split("\x0").partition do |f|
     f.match(%r{^(test|spec|features)/})
