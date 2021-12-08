@@ -20,11 +20,9 @@ module Fluent
     class NumComparisonFilter < Fluent::Plugin::Filter
       Fluent::Plugin.register_filter("num_comparison", self)
 
-      # recordのkey
       config_param :record_key, :string
-      # 閾値
       config_param :threshold, :integer
-      # 閾値より大きいもの、小さいものどちらを出力するのか(larger or smaller)
+      # larger or smaller
       config_param :inequality, :string, default: "larger"
 
       def configure(conf)
