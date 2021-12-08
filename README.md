@@ -1,4 +1,5 @@
 # fluent-plugin-num-comparison
+[![RakeTest](https://github.com/homirun/fluent-plugin-num-comparison/actions/workflows/test.yaml/badge.svg)](https://github.com/homirun/fluent-plugin-num-comparison/actions/workflows/test.yaml)
 
 fluent-plugin-num-comparison is a fluent-plugin that compares the value of a specified key with a threshold value and extracts only the larger or smaller ones.
 
