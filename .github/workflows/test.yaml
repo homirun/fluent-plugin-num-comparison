@@ -1,0 +1,20 @@
+name: RakeTest
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby 2.7.2
+        uses: ruby/setup-ruby@v1
+          with:
+            ruby-version: 2.7.2
+      - name: test
+        run: |
+        gem install bundler rake
+        bundle install
+        bundle exec rake test
