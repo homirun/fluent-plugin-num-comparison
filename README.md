@@ -1,14 +1,11 @@
 # fluent-plugin-num-comparison
 
-[Fluentd](https://fluentd.org/) filter plugin to do something.
+fluent-plugin-num-comparison is a fluent-plugin that compares the value of a specified key with a threshold value and extracts only the larger or smaller ones.
 
-指定したキーの値と閾値を比較して大きい、もしくは小さいものだけを抽出するプラグインです。
 
 ## Installation
 
 ### RubyGems
-#### gemに登録していないので降ってきません
-
 ```
 $ gem install fluent-plugin-num-comparison
 ```
@@ -67,16 +64,17 @@ $ bundle
 
 ## Params
 - record_key: string  
-  比較したいレコードのキー  
+  The key of the event record to be compared.
+  
 - threshold: integer  
-  閾値  
+  The threshold value to compare with the event record.
 - inequality: string (`larger` || `smaller`)  
-  比較対象が閾値より大きいものをアウトプットするのか小さいものをアウトプットするのかを決める  
-  デフォルト値は`larger`  
+  Decide whether to output a comparison object that is larger or smaller than the threshold.
+  The default value is `larger`.  
 
 
 ## Copyright
 
 * Copyright(c) 2021- homirun
 * License
-  * Apache License, Version 2.0
+  * MIT
