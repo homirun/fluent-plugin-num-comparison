@@ -29,9 +29,9 @@ $ bundle
 
 ### InputExample
 ```json
-{"access_count": 29},
-{"access_count": 30},
-{"access_count": 31},
+{"access_count": 29}
+{"access_count": 30}
+{"access_count": 31}
 ```
 
 ### ConfigExample
@@ -59,8 +59,7 @@ $ bundle
 
 ### OutputExample
 ```json
-{"access_count": 30},
-{"access_count": 31},
+{"access_count": 31}
 ```
 
 ## Params
